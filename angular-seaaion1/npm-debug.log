@@ -1,0 +1,76 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   '@angular/cli' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose cache add [ '@angular/cli', null ]
+5 verbose cache add name=undefined spec="@angular/cli" args=["@angular/cli",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: '@angular/cli',
+6 verbose parsed url   path: '@angular/cli',
+6 verbose parsed url   href: '@angular/cli' }
+7 verbose cache add name="" spec="angular/cli" args=["","angular/cli"]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'angular/cli',
+8 verbose parsed url   path: 'angular/cli',
+8 verbose parsed url   href: 'angular/cli' }
+9 silly lockFile 5cecaa1c-angular-cli angular/cli
+10 verbose lock angular/cli C:\Users\Mostafa\AppData\Roaming\npm-cache\5cecaa1c-angular-cli.lock
+11 info maybeGithub Attempting angular/cli from git://github.com/angular/cli
+12 silly lockFile 057ccbdd-git-github-com-angular-cli git://github.com/angular/cli
+13 verbose lock git://github.com/angular/cli C:\Users\Mostafa\AppData\Roaming\npm-cache\057ccbdd-git-github-com-angular-cli.lock
+14 verbose addRemoteGit [ 'git://github.com/angular/cli', 'master' ]
+15 warn `git config --get remote.origin.url` returned wrong result (git://github.com/angular/cli)
+16 verbose git clone git://github.com/angular/cli Cloning into bare repository 'C:\Users\Mostafa\AppData\Roaming\npm-cache\_git-remotes\git-github-com-angular-cli-057ccbdd'...
+16 verbose git clone git://github.com/angular/cli fatal: remote error:
+16 verbose git clone git://github.com/angular/cli   Repository not found.
+17 silly lockFile 057ccbdd-git-github-com-angular-cli git://github.com/angular/cli
+18 silly lockFile 057ccbdd-git-github-com-angular-cli git://github.com/angular/cli
+19 info maybeGithub Attempting angular/cli from git+ssh://git@github.com:angular/cli
+20 silly lockFile 515723dd-git-github-com-angular-cli git@github.com:angular/cli
+21 verbose lock git@github.com:angular/cli C:\Users\Mostafa\AppData\Roaming\npm-cache\515723dd-git-github-com-angular-cli.lock
+22 verbose addRemoteGit [ 'git@github.com:angular/cli', 'master' ]
+23 warn `git config --get remote.origin.url` returned wrong result (git@github.com:angular/cli)
+24 error git clone git@github.com:angular/cli Cloning into bare repository 'C:\Users\Mostafa\AppData\Roaming\npm-cache\_git-remotes\git-github-com-angular-cli-515723dd'...
+24 error git clone git@github.com:angular/cli Host key verification failed.
+24 error git clone git@github.com:angular/cli fatal: Could not read from remote repository.
+24 error git clone git@github.com:angular/cli
+24 error git clone git@github.com:angular/cli Please make sure you have the correct access rights
+24 error git clone git@github.com:angular/cli and the repository exists.
+25 silly lockFile 515723dd-git-github-com-angular-cli git@github.com:angular/cli
+26 silly lockFile 515723dd-git-github-com-angular-cli git@github.com:angular/cli
+27 silly lockFile 5cecaa1c-angular-cli angular/cli
+28 silly lockFile 5cecaa1c-angular-cli angular/cli
+29 error addLocal Could not install angular/cli
+30 error Error: ENOENT, stat 'D:\angular\angular\cli'
+31 error If you need help, you may report this *entire* log,
+31 error including the npm and node versions, at:
+31 error     <http://github.com/npm/npm/issues>
+32 error System Windows_NT 6.1.7601
+33 error command "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "@angular/cli"
+34 error cwd D:\angular
+35 error node -v v0.10.29
+36 error npm -v 1.4.14
+37 error path D:\angular\angular\cli
+38 error code ENOENT
+39 error errno 34
+40 verbose exit [ 34, true ]

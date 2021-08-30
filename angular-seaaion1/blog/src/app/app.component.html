@@ -1,0 +1,68 @@
+<h3>interpolation</h3>
+
+<p>this is {{title}} & {{method()}}</p>
+
+<p>{{this.isHeader ? "this is expression interpolation with true" :"this is expression interpolation with false" }}</p>
+
+<h3>property binding</h3>
+
+<input type="text" value="valueBinding">
+
+<!-- variable binding -->
+<input type="text" placeholder="email" [value]="isHeader"> 
+
+
+
+<!-- //////////////method binding ////// -->
+<input type="text" [value]="method()">
+
+<h3>class binding</h3>
+<p 
+ [class.header]= "isHeader"
+ [class.header1] = "!isHeader"
+  > single class binder </p>
+
+  <h3>multible class binding</h3>
+  <p 
+    [ngClass] = "{
+      header : isHeader,
+      header1 : !isHeader
+    }"
+   > multible class binder </p>
+
+   <h3>method class binding</h3>
+
+<p    [ngClass]= "MHeaderClasses()">method class binding</p>
+
+<h3>style binding</h3>
+<p style="color:darkgreen">style binding</p>
+
+<h3>single style binding</h3>
+<p [style.color] ="isHeader ? 'yellow' : 'red' " 
+>single style binding</p>
+
+<h3>multible style binding</h3>
+<p
+[ngStyle] = "Mstyle()"
+>multible style binding</p>
+
+<button (click)="toggleHeader()"> toggle button </button>
+<h3> isHeader: {{isHeader}}</h3>
+
+
+
+<ul>
+  <li *ngFor="let p of person ">
+      {{p}}
+  </li>
+</ul>
+
+<ul *ngFor="let group of peopleByCountry">
+  <li>{{group.country}}</li>
+  <ul>
+      <li *ngFor="let name of group.names ">
+          {{name.name}}
+      </li>
+  </ul>
+</ul>
+
